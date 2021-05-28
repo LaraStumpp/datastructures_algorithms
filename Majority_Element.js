@@ -16,22 +16,22 @@ Input: nums = [2,2,1,1,1,2,2]
 Output: 2
  */
 function majorityElement(nums) {
-    var hashmap={};
-    
-    for(var i = 0; i<nums.length; i++){
-        if(nums[i] in hashmap)
-            {
-                hashmap[nums[i]] = hashmap[nums[i]] + 1;
-            } else{
-                hashmap[nums[i]] = 1;
+    var hashmap = {};
+    for(var i=0; i< nums.length; i++)
+        {
+            if(nums[i] in hashmap){
+                hashmap[nums[i]]= hashmap[nums[i]] +1;
             }
-      
-    }
-    
-    var majority = nums.length / 2;
-    for(var key in hashmap){
-         if(hashmap[key] > majority){
-            return key;
+            else{
+                hashmap[nums[i]]=1;
+            }
         }
+    for(var key in hashmap){
+        if(hashmap[key] >= nums.length/2){
+        return key;}
+    
     }
 }
+
+    var nums=[2,2,1,1,1,2,2];
+    console.log(majorityElement(nums));
