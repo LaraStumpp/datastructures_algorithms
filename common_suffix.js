@@ -1,6 +1,6 @@
-Common Suffix
+/**Common Suffix
 constantly seeks words that end with the same letters. Write a function that, when given a word array, returns the largest suffix (word-end) common to all words in the array. 
-For inputs ["deforestation", "citation","conviction", "incarceration"], return "tion" (not all that creative a rhyming point). If it is ["nice", "ice", "baby"], return "", because that’s just … not.
+For inputs ["deforestation", "citation","conviction", "incarceration"], return "tion" (not all that creative a rhyming point). If it is ["nice", "ice", "baby"], return "", because that’s just … not. */
 
 function commonSuffix(arr){
   var hashmap={};
