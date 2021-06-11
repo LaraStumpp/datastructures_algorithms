@@ -28,9 +28,6 @@ function reverseWords (s) {
           
             sToArr[i]=wordArr.join("")
         }
-     
-      
-      
     }
   return sToArr.join(" ");
 }
